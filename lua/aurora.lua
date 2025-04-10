@@ -87,6 +87,7 @@ local ct = {
 	bluee = "#45b5e1",
 	bluef = "#65d5e1",
 	blue10 = "#6c67ea",
+	blue11 = "#94e2d5",
 
 	gray1 = "#111017",
 	gray2 = "#22202a",
@@ -260,8 +261,8 @@ local link_ts_v8 = function(bg)
 	vim.api.nvim_set_hl(0, "@text.danger", { link = "ErrorMsg" })
 
 	-- custom
-	vim.api.nvim_set_hl(0, "@keyword.import", { fg = ct.aqua, bold = true, italic = true })
-	vim.api.nvim_set_hl(0, "@keyword.export", { fg = ct.aqua, bold = true, italic = true })
+	vim.api.nvim_set_hl(0, "@keyword.import", { fg = ct.blue11, bold = true, italic = true })
+	vim.api.nvim_set_hl(0, "@keyword.export", { fg = ct.blue11, bold = true, italic = true })
 
 	vim.api.nvim_set_hl(0, "@tag.attribute.tsx", { fg = ct.blue3, italic = true })
 	vim.api.nvim_set_hl(0, "@_jsx_attribute.tsx", { fg = ct.blue3, italic = true })
@@ -280,8 +281,8 @@ local lsp_v9 = function()
 	vim.api.nvim_set_hl(0, "@lsp.type.comment", { link = "@comment" })
 	vim.api.nvim_set_hl(0, "@lsp.type.decorator", { link = "@attribute" })
 	vim.api.nvim_set_hl(0, "@lsp.type.deriveHelper", { link = "@attribute" })
-	vim.api.nvim_set_hl(0, "@lsp.type.enum", { fg = ct.blue4, bold = true })
-	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = ct.green3 })
+	vim.api.nvim_set_hl(0, "@lsp.type.enum", { fg = ct.green3, bold = true })
+	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = ct.bluea })
 	-- vim.api.nvim_set_hl(0, "@lsp.type.enum", { link = "@type" })
 	-- vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { link = "@constant" })
 	vim.api.nvim_set_hl(0, "@lsp.type.escapeSequence", { link = "@string.escape" })
