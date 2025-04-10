@@ -33,6 +33,7 @@ local ct = {
 	yellow6 = "#E6DB74",
 	yellow7 = "#DBC08A",
 	yellow8 = "#bBa03A",
+	yellow9 = "#9D5C0D",
 
 	tan = "#DDCFBF",
 	orange1 = "#ffbe00",
@@ -279,8 +280,8 @@ local lsp_v9 = function()
 	vim.api.nvim_set_hl(0, "@lsp.type.comment", { link = "@comment" })
 	vim.api.nvim_set_hl(0, "@lsp.type.decorator", { link = "@attribute" })
 	vim.api.nvim_set_hl(0, "@lsp.type.deriveHelper", { link = "@attribute" })
-	vim.api.nvim_set_hl(0, "@lsp.type.enum", { fg = ct.green7, bold = true })
-	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = ct.yellow8 })
+	vim.api.nvim_set_hl(0, "@lsp.type.enum", { fg = ct.blue4, bold = true })
+	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = ct.green3 })
 	-- vim.api.nvim_set_hl(0, "@lsp.type.enum", { link = "@type" })
 	-- vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { link = "@constant" })
 	vim.api.nvim_set_hl(0, "@lsp.type.escapeSequence", { link = "@string.escape" })
@@ -317,7 +318,6 @@ local lsp_v9 = function()
 	vim.api.nvim_set_hl(0, "@lsp.typemod.variable.defaultLibrary", { link = "@variable.builtin" })
 	vim.api.nvim_set_hl(0, "@lsp.typemod.variable.injected", { link = "@variable" })
 	vim.api.nvim_set_hl(0, "@lsp.typemod.variable.static", { link = "@constant" })
-
 	vim.api.nvim_set_hl(0, "@lsp.typemod.interface.declaration", { fg = ct.yellow9, bold = true })
 
 	vim.api.nvim_set_hl(0, "@markup", { link = "@none" })
