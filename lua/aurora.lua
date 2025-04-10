@@ -459,7 +459,7 @@ return {
 			vim.api.nvim_set_hl(0, "PMenuExtra", { fg = ct.blueb, bg = bg3, ctermfg = 103, ctermbg = 232 })
 			vim.api.nvim_set_hl(0, "PMenuSel", {
 				fg = "NONE",
-				bg = ct.neardark5,
+				bg = ct.neardarkb,
 				ctermfg = 189,
 				ctermbg = 238,
 			})
