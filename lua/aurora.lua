@@ -50,6 +50,7 @@ local ct = {
 	green8 = "#9eeb61",
 	green9 = "#67d5b5",
 	greena = "#77d507",
+	greenb = "#28FFBF",
 	dimgreen = "#123314",
 
 	red = "#ff5874",
@@ -209,7 +210,7 @@ local link_ts_v8 = function(bg)
 	vim.api.nvim_set_hl(0, "@method.call", { fg = ct.aqua, ctermfg = 81 })
 	vim.api.nvim_set_hl(0, "@conditional", { fg = ct.violet, ctermfg = 213, bold = (vim.g.aurora_bold == 1) })
 	vim.api.nvim_set_hl(0, "@repeat", { link = "Repeat" })
-	vim.api.nvim_set_hl(0, "@exception", { fg = ct.red, ctermfg = 204, italic = (vim.g.aurora_italic == 1) })
+	vim.api.nvim_set_hl(0, "@exception", { fg = ct.redc, ctermfg = 204, italic = (vim.g.aurora_italic == 1) })
 	vim.api.nvim_set_hl(0, "@label", { link = "Label" })
 	vim.api.nvim_set_hl(0, "@operator", { link = "Operator" })
 	vim.api.nvim_set_hl(0, "@structure", { link = "Structure" })
@@ -515,13 +516,13 @@ return {
 				"Keyword",
 				{ fg = ct.purple0, ctermfg = 183, bold = (vim.g.aurora_bold == 1), italic = (vim.g.aurora_italic == 1) }
 			)
-			vim.api.nvim_set_hl(0, "Exception", { fg = ct.pink9, ctermfg = 168 })
+			vim.api.nvim_set_hl(0, "Exception", { fg = ct.redc, ctermfg = 168 })
 			vim.api.nvim_set_hl(0, "PreProc", { fg = ct.violet, ctermfg = 213 })
 			vim.api.nvim_set_hl(0, "Include", { fg = ct.pink7, bg = bg, ctermfg = 176, ctermbg = "NONE" })
 			vim.api.nvim_set_hl(0, "Define", { fg = ct.red, ctermfg = 204, italic = (vim.g.aurora_italic == 1) })
 			vim.api.nvim_set_hl(0, "Macro", { fg = ct.red7, bg = bg, ctermfg = 131, ctermbg = "NONE" })
 			vim.api.nvim_set_hl(0, "PreCondit", { fg = ct.lightgreen, bg = bg, ctermfg = 193, ctermbg = "NONE" })
-			vim.api.nvim_set_hl(0, "Type", { fg = ct.green0, ctermfg = 79, bold = (vim.g.aurora_bold == 1) })
+			vim.api.nvim_set_hl(0, "Type", { fg = ct.pink9, ctermfg = 79, bold = (vim.g.aurora_bold == 1) })
 			vim.api.nvim_set_hl(0, "StorageClass", { fg = ct.blued, ctermfg = 45 })
 			vim.api.nvim_set_hl(0, "Structure", { fg = ct.cyan, ctermfg = 158, bold = (vim.g.aurora_bold == 1) })
 			vim.api.nvim_set_hl(0, "Typedef", { fg = ct.aqua, bg = bg, ctermfg = 81, ctermbg = "NONE" })
