@@ -521,7 +521,7 @@ return {
 			vim.api.nvim_set_hl(0, "Define", { fg = ct.red, ctermfg = 204, italic = (vim.g.aurora_italic == 1) })
 			vim.api.nvim_set_hl(0, "Macro", { fg = ct.red7, bg = bg, ctermfg = 131, ctermbg = "NONE" })
 			vim.api.nvim_set_hl(0, "PreCondit", { fg = ct.lightgreen, bg = bg, ctermfg = 193, ctermbg = "NONE" })
-			vim.api.nvim_set_hl(0, "Type", { fg = ct.green9, ctermfg = 79, bold = (vim.g.aurora_bold == 1) })
+			vim.api.nvim_set_hl(0, "Type", { fg = ct.green, ctermfg = 79, bold = (vim.g.aurora_bold == 1) })
 			vim.api.nvim_set_hl(0, "StorageClass", { fg = ct.blued, ctermfg = 45 })
 			vim.api.nvim_set_hl(0, "Structure", { fg = ct.cyan, ctermfg = 158, bold = (vim.g.aurora_bold == 1) })
 			vim.api.nvim_set_hl(0, "Typedef", { fg = ct.aqua, bg = bg, ctermfg = 81, ctermbg = "NONE" })
