@@ -261,11 +261,6 @@ local link_ts_v8 = function(bg)
 	-- custom
 	vim.api.nvim_set_hl(0, "@keyword.import", { fg = ct.aqua, bold = true, italic = true })
 	vim.api.nvim_set_hl(0, "@keyword.export", { fg = ct.aqua, bold = true, italic = true })
-	vim.api.nvim_set_hl(0, "@lsp.typemod.interface.declaration", { fg = ct.yellow9, bold = true })
-	vim.api.nvim_set_hl(0, "@lsp.type.interface", { fg = ct.yellow9, bold = true })
-
-	vim.api.nvim_set_hl(0, "@lsp.type.enum", { fg = ct.green7, bold = true })
-	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = ct.yellow8 })
 
 	vim.api.nvim_set_hl(0, "@tag.attribute.tsx", { fg = ct.blue3, italic = true })
 	vim.api.nvim_set_hl(0, "@_jsx_attribute.tsx", { fg = ct.blue3, italic = true })
@@ -284,12 +279,15 @@ local lsp_v9 = function()
 	vim.api.nvim_set_hl(0, "@lsp.type.comment", { link = "@comment" })
 	vim.api.nvim_set_hl(0, "@lsp.type.decorator", { link = "@attribute" })
 	vim.api.nvim_set_hl(0, "@lsp.type.deriveHelper", { link = "@attribute" })
+	vim.api.nvim_set_hl(0, "@lsp.type.enum", { fg = ct.green7, bold = true })
+	vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { fg = ct.yellow8 })
 	-- vim.api.nvim_set_hl(0, "@lsp.type.enum", { link = "@type" })
 	-- vim.api.nvim_set_hl(0, "@lsp.type.enumMember", { link = "@constant" })
 	vim.api.nvim_set_hl(0, "@lsp.type.escapeSequence", { link = "@string.escape" })
 	vim.api.nvim_set_hl(0, "@lsp.type.formatSpecifier", { link = "@punctuation.special" })
 	vim.api.nvim_set_hl(0, "@lsp.type.generic", { link = "@variable" })
-	vim.api.nvim_set_hl(0, "@lsp.type.interface", { link = "Identifier" })
+	-- vim.api.nvim_set_hl(0, "@lsp.type.interface", { link = "Identifier" })
+	vim.api.nvim_set_hl(0, "@lsp.type.interface", { fg = ct.yellow9, bold = true })
 	vim.api.nvim_set_hl(0, "@lsp.type.keyword", { link = "@keyword" })
 	vim.api.nvim_set_hl(0, "@lsp.type.lifetime", { link = "@storageclass" })
 	vim.api.nvim_set_hl(0, "@lsp.type.namespace", { link = "@namespace" })
@@ -319,6 +317,8 @@ local lsp_v9 = function()
 	vim.api.nvim_set_hl(0, "@lsp.typemod.variable.defaultLibrary", { link = "@variable.builtin" })
 	vim.api.nvim_set_hl(0, "@lsp.typemod.variable.injected", { link = "@variable" })
 	vim.api.nvim_set_hl(0, "@lsp.typemod.variable.static", { link = "@constant" })
+
+	vim.api.nvim_set_hl(0, "@lsp.typemod.interface.declaration", { fg = ct.yellow9, bold = true })
 
 	vim.api.nvim_set_hl(0, "@markup", { link = "@none" })
 	vim.api.nvim_set_hl(0, "@markup.list", { fg = ct.blue }) -- For special punctuation that does not fall in the categories before)
@@ -903,9 +903,10 @@ return {
 		vim.api.nvim_set_hl(0, "BlinkPairsGreen", { fg = ct.green })
 		vim.api.nvim_set_hl(0, "BlinkPairsBlue", { fg = ct.blue })
 		vim.api.nvim_set_hl(0, "BlinkPairsYellow", { fg = ct.yellow })
-		vim.api.nvim_set_hl(0, "BlinkPairsPurple", { fg = ct.pink })
+		vim.api.nvim_set_hl(0, "BlinkPairsPurple", { fg = ct.purple })
 		vim.api.nvim_set_hl(0, "BlinkPairsCyan", { fg = ct.cyan })
 		vim.api.nvim_set_hl(0, "BlinkPairsOrange", { fg = ct.orange })
+		vim.api.nvim_set_hl(0, "BlinkPairsPink", { fg = ct.pink })
 
 		-- blink.cmp
 		vim.api.nvim_set_hl(0, "BlinkCmpKindMethod", { link = "@function.method" })
@@ -931,6 +932,7 @@ return {
 		vim.api.nvim_set_hl(0, "BlinkCmpKindEvent", { link = "Type" })
 		vim.api.nvim_set_hl(0, "BlinkCmpKindOperator", { link = "Operator" })
 		vim.api.nvim_set_hl(0, "BlinkCmpKindTypeParameter", { link = "Type" })
+
 		vim.api.nvim_set_hl_ns(0)
 	end,
 }
