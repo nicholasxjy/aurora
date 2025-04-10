@@ -454,7 +454,7 @@ return {
 			vim.api.nvim_set_hl(0, "ModeMsg", { fg = ct.greena, bg = bg, ctermfg = 112, ctermbg = "NONE" })
 			vim.api.nvim_set_hl(0, "MoreMsg", { fg = ct.graya, bg = bg, ctermfg = 146, ctermbg = "NONE" })
 			vim.api.nvim_set_hl(0, "NonText", { fg = ct.gray4, ctermfg = 239 })
-			vim.api.nvim_set_hl(0, "PMenu", { fg = ct.fg2, bg = bg3, ctermfg = 103, ctermbg = 234 })
+			vim.api.nvim_set_hl(0, "PMenu", { fg = ct.fg2, bg = bgfl, ctermfg = 103, ctermbg = 234 })
 			vim.api.nvim_set_hl(0, "PMenuKind", { fg = ct.green6, bg = bg3, ctermfg = 103, ctermbg = 232 })
 			vim.api.nvim_set_hl(0, "PMenuExtra", { fg = ct.blueb, bg = bg3, ctermfg = 103, ctermbg = 232 })
 			vim.api.nvim_set_hl(0, "PMenuSel", {
