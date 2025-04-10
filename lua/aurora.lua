@@ -365,7 +365,7 @@ return {
 			vim.api.nvim_set_hl(0, "Normal", { fg = ct.bright, bg = bg, ctermfg = 189, ctermbg = 234 })
 			vim.api.nvim_set_hl(0, "NormalFloat", { fg = ct.text, bg = bgfl, ctermfg = 187, ctermbg = 236, blend = 20 })
 			vim.api.nvim_set_hl(0, "NormalNC", { fg = ct.fg, bg = bg2, ctermfg = 146, ctermbg = 236 })
-			vim.api.nvim_set_hl(0, "FloatBorder", { fg = ct.blue1, bg = bg2, ctermfg = 80, ctermbg = 236 })
+			vim.api.nvim_set_hl(0, "FloatBorder", { fg = ct.blue1, bg = bgfl, ctermfg = 80, ctermbg = 236 })
 			vim.api.nvim_set_hl(0, "LineNr", { fg = ct.gray6, bg = bg, ctermfg = 239, ctermbg = 234 })
 			vim.api.nvim_set_hl(0, "LineNrAbove", { fg = ct.gray5, bg = bg, ctermfg = 239, ctermbg = 234 })
 			vim.api.nvim_set_hl(0, "LineNrBelow", { link = "LineNrAbove" })
@@ -458,12 +458,10 @@ return {
 			vim.api.nvim_set_hl(0, "PMenuKind", { fg = ct.green6, bg = bg3, ctermfg = 103, ctermbg = 232 })
 			vim.api.nvim_set_hl(0, "PMenuExtra", { fg = ct.blueb, bg = bg3, ctermfg = 103, ctermbg = 232 })
 			vim.api.nvim_set_hl(0, "PMenuSel", {
-				fg = ct.white,
+				fg = "NONE",
 				bg = ct.neardark5,
 				ctermfg = 189,
 				ctermbg = 238,
-				bold = (vim.g.aurora_bold == 1),
-				italic = (vim.g.aurora_italic == 1),
 			})
 			vim.api.nvim_set_hl(0, "PmenuSbar", { fg = "NONE", bg = ct.gray4, ctermfg = "NONE", ctermbg = 239 })
 			vim.api.nvim_set_hl(0, "PmenuThumb", { fg = "NONE", bg = ct.graya, ctermfg = "NONE", ctermbg = 146 })
